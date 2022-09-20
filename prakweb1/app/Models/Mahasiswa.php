@@ -10,14 +10,10 @@ class Mahasiswa extends Model
     protected $table            = 'mahasiswa';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    // protected $insertID         = 0;
-    // protected $returnType       = 'array';
-    // protected $useSoftDeletes   = false;
-    // protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['npm','nama','alamat'];
 
     // Dates
-    protected $useTimestamps = true;
+    protected $useTimestamps = True ; // Diubah ke false karena error
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
